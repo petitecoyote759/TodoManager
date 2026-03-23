@@ -5,6 +5,21 @@
     <TargetFramework>net8.0-windows10.0.26100.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+    <ApplicationIcon>TodoManagerIcon.ico</ApplicationIcon>
+    <AnalysisLevel>6.0-all</AnalysisLevel>
+    <EnforceCodeStyleInBuild>True</EnforceCodeStyleInBuild>
   </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <WarningLevel>9999</WarningLevel>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <WarningLevel>9999</WarningLevel>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="TodoManagerIcon.ico" />
+  </ItemGroup>
 
 </Project>
